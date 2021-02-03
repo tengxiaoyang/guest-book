@@ -3,6 +3,8 @@ import './App.css';
 import NameCard from './components/NameCard';
 import LikesButton from './components/LikesButton';
 import DigitalClock from './components/DigitalClock';
+import CommentBox from './components/CommentBox';
+import CommentBoxUncontrolled from './components/CommentBoxUncontrolled';
 const tags = ['恐龙', '足球小子']
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
       <NameCard name="King" number={1234567890} isHuman tags={tags} />
       <LikesButton />
       <DigitalClock />
+      <CommentBox />
+      <CommentBoxUncontrolled />
     </div>
   );
 }
