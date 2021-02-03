@@ -39,20 +39,37 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      comments: ['this is my first reply']
+      comments: [
+        'this is my first reply',
+        'this is my second reply',
+        'this is my third reply',
+        'this is my fourth reply',
+        'this is my fifth reply',
+        'this is my sixth reply',
+      ]
     }
     this.addComment = this.addComment.bind(this)
+    this.deleteComment = this.deleteComment.bind(this)
   }
   addComment(comment) {
     this.setState({
       comments: [...this.state.comments, comment]
     })
   }
+  deleteComment(indexToDelete) {
+    console.log(indexToDelete)
+    this.setState(
+      this.state.comments.splice(indexToDelete, 1)
+    )
+  }
   render() {
     const { comments } = this.state
     return (
       <div>
-        <CommentList comments={comments} />
+        <CommentList 
+          comments={comments} 
+          onDeleteComment={this.deleteComment}
+        />
         <CommentBoxUncontrolled 
           componentsLength={comments.length} 
           onAddComment={this.addComment}

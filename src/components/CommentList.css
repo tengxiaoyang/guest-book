@@ -1,0 +1,14 @@
+html {
+  font-size: 20px;
+}
+.comment-list-title {
+  width: 5rem;
+  height: 2rem;
+  display: block;
+  margin: 0 auto;
+  line-height: 2rem;
+  text-align: center;
+}
+.delete-comment {
+  float: right;
+}

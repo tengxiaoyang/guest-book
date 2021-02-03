@@ -13,7 +13,7 @@ class CommentBoxUncontrolled extends React.Component {
   }
   render() {
     return (
-      <form className="p-5" onSubmit={this.handleSubmit}>
+      <form className="p-3" onSubmit={this.handleSubmit}>
         <div className="form-group">
           <label>留言内容</label>
           <input 
