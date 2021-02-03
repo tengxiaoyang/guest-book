@@ -9,32 +9,6 @@ import CommentBoxUncontrolled from './components/CommentBoxUncontrolled';
 import CommentList from './components/CommentList';
 const tags = ['恐龙', '足球小子']
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//       <NameCard name="King" number={1234567890} isHuman tags={tags} />
-//       <LikesButton />
-//       <DigitalClock />
-//       <CommentBox />
-//       <CommentBoxUncontrolled />
-//     </div>
-//   );
-// }
-
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -78,5 +52,31 @@ class App extends React.Component {
     )
   }
 }
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//       <NameCard name="King" number={1234567890} isHuman tags={tags} />
+//       <LikesButton />
+//       <DigitalClock />
+//       <CommentBox />
+//       <CommentBoxUncontrolled />
+//     </div>
+//   );
+// }
 
 export default App;
