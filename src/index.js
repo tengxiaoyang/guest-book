@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Welcome from './Welcome';
+import 'bootstrap/dist/css/bootstrap.min.css'
+// import Welcome from './Welcome';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Welcome />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
