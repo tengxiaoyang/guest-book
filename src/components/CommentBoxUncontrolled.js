@@ -8,6 +8,7 @@ class CommentBoxUncontrolled extends React.Component {
   handleSubmit(event) {
     // alert(this.textInput.value)
     this.props.onAddComment(this.textInput.value)
+    this.textInput.value = ''
     event.preventDefault()
   }
   render() {
