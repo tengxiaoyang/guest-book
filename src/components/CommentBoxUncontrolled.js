@@ -30,7 +30,7 @@ class CommentBoxUncontrolled extends React.Component {
           留言
         </button>
         <p>
-          已有{this.props.componentsLength}条评论
+          已有{this.props.componentsLength}条留言
         </p>
       </form>
     )

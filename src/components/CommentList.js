@@ -16,7 +16,7 @@ class CommentList extends React.Component {
     const { comments } = this.props
     return (
       <div className="comment-list-component">
-        <label className="comment-list-title">评论列表</label>
+        <label className="comment-list-title">留言列表</label>
         <ul className="list-group mb-3">
           {
             comments.map((comment, index) => 
