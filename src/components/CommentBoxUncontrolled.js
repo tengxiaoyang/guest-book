@@ -6,7 +6,8 @@ class CommentBoxUncontrolled extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
   handleSubmit(event) {
-    alert(this.textInput.value)
+    // alert(this.textInput.value)
+    this.props.onAddComment(this.textInput.value)
     event.preventDefault()
   }
   render() {
@@ -27,6 +28,9 @@ class CommentBoxUncontrolled extends React.Component {
           className="btn btn-primary">
           留言
         </button>
+        <p>
+          已有{this.props.componentsLength}条评论
+        </p>
       </form>
     )
   }
